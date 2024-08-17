@@ -1,0 +1,464 @@
+#Home{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    height: 90vh;
+  }
+  .photoPort{
+    background-image: url(../IMG/photoPORTk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 20%;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-shadow: 1rem 1rem 1rem rgba(0, 255, 234, 0.842);
+    border-radius: 10px;
+  }
+  .photoPort div a{
+    color: #fff;
+    font-size: 1rem;
+    margin: 1rem ;
+    text-decoration: none;
+  }
+  .photoPort div a:hover{
+   box-shadow: 0.1rem 0.1rem 1rem rgb(255, 255, 255);
+ 
+  }
+  .photoPort div{
+    background-color: #000;
+    border-radius: 0 0 25px 0 ;
+  }
+  .aboutContact{
+  font-size: 3rem;
+  font-weight: 900;
+  }
+  
+  .NameAuthor ,.linkContuntUS {
+    border-bottom: 2px solid rgb(0, 255, 234);
+    padding: 0 0 2px 0;
+    text-decoration: none;
+  }
+  
+  .linkContuntUS:visited ,.Link:visited  ,.Link:focus     {
+    color: #fff;
+    text-decoration: none;
+  }
+  .skills{
+   width: 90%;
+   display: grid;
+   grid-template-columns: repeat(3,30%);
+   align-content: stretch;
+   justify-content: end;
+   align-items: center;
+   justify-items: start;
+   height: 80vh;
+   margin: 0 auto;
+ }
+ .itemSkill h1{
+   font-size: 3rem;
+ }
+ .itemSkill p{
+   font-size: 1.5rem;
+ }
+ .heading{
+   text-align: center;
+   margin-bottom: 2rem;
+   position: relative;
+ }
+ 
+ .heading::before{
+   content: '';
+   position: absolute;
+   top:50%; left:0;
+   transform: translateY(-50%);
+   width: 100%;
+   height:.01rem;
+   z-index: -1;
+   background-color: #fff;
+ }
+ 
+ .heading span{
+   font-size: 3rem;
+   padding:.5rem 2rem;
+   color:#fff;
+   border:0.1rem solid rgb(255, 255, 255);
+   background-color: #000;
+ }
+ #Gallary img {
+ 
+   border-radius: 50%;
+   width: 250px;
+   aspect-ratio: 1;
+   outline: calc(250px/2) solid #0009;
+   outline-offset: calc(250px/-2);
+   cursor: pointer;
+   transition: 0.3s;
+   object-fit: cover;
+ }
+ #Gallary img:hover {
+   outline: 2px solid #4ECDC4;
+   outline-offset: 14px;
+ }
+ 
+ #Gallary {
+   margin: 0;
+   min-height: 100vh;
+   display: grid;
+   gap: 50px;
+   place-content: center;
+   place-items: center;
+   grid-template-columns: repeat(3,30%);
+ }
+ /* START CONTINER */
+ .Continer{
+   width: 80%;
+   padding-left: 15px;
+   padding-right: 15px;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: #eee;
+ }
+ 
+ #contact {
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ padding: 0;
+ background-color: var(--dark);
+ padding-bottom: 100px;
+ }
+ 
+ .section-header {
+ text-align: center;
+ margin: 0 auto;
+ padding: 40px 0;
+ font: 300 60px 'Oswald', sans-serif;
+ color: #fff;
+ text-transform: uppercase;
+ letter-spacing: 6px;
+ }
+ 
+ .contact-wrapper {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ margin: 0 auto;
+ padding: 20px;
+ position: relative;
+ max-width: 840px;
+ 
+ }
+ 
+ /* Left contact page */
+ .form-horizontal {
+ font-family: 'Lato';
+ font-weight: 400;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ flex-wrap: nowrap;
+ justify-content: center;
+ width: 80%;
+ }
+ 
+ .form-control{
+ max-width: 400px;
+ background-color: var(--dark) !important;
+ color: #fff;
+ letter-spacing: 1px;
+ margin: 10px 0;
+ font-size: 1.5rem !important;
+ }
+ #name,#email{
+ width: 400px;
+ }
+ .send-button {
+ margin-top: 15px;
+ height: 5rem;
+ width: 400px;
+ overflow: hidden;
+ transition: all .2s ease-in-out;
+ }
+ 
+ .alt-send-button {
+ width: 100%;
+ height: 34px;
+ transition: all .2s ease-in-out;
+ }
+ 
+ .send-text {
+ display: block;
+ margin-top: 10px;
+ font: 700 12px 'Lato', sans-serif;
+ letter-spacing: 2px;
+ }
+ 
+ .alt-send-button:hover {
+ transform: translate3d(0px, -20px, 0px);
+ }
+ 
+ /* Begin Right Contact Page */
+ .direct-contact-container {
+ max-width: 400px;
+ }
+ 
+ /* Location, Phone, Email Section */
+ .contact-list {
+ list-style-type: none;
+ margin-left: -30px;
+ padding-right: 20px;
+ }
+ 
+ .list-item {
+ line-height: 4;
+ color: #aaa;
+ }
+ 
+ .contact-text {
+ font: 300 18px 'Lato', sans-serif;
+ letter-spacing: 1.9px;
+ color: #bbb;
+ }
+ 
+ .place {
+ margin-left: 62px;
+ }
+ 
+ .phone {
+ margin-left: 56px;
+ }
+ 
+ .gmail {
+ margin-left: 53px;
+ }
+ 
+ .contact-text a {
+ color: #bbb;
+ text-decoration: none;
+ transition-duration: 0.2s;
+ }
+ 
+ .contact-text a:hover {
+ color: #fff;
+ text-decoration: none;
+ }
+ 
+ 
+ /* Social Media Icons */
+ .social-media-list {
+ position: relative;
+ font-size: 22px;
+ text-align: center;
+ width: 100%;
+ margin: 0 auto;
+ padding: 0;
+ }
+ 
+ .social-media-list li a {
+ color: #fff;
+ }
+ 
+ .social-media-list li {
+ position: relative; 
+ display: inline-block;
+ height: 60px;
+ width: 60px;
+ margin: 10px 3px;
+ line-height: 60px;
+ border-radius: 50%;
+ color: #fff;
+ background-color: rgb(27,27,27);
+ cursor: pointer; 
+ transition: all .2s ease-in-out;
+ }
+ 
+ .social-media-list li:after {
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 60px;
+ height: 60px;
+ line-height: 60px;
+ border-radius: 50%;
+ opacity: 0;
+ box-shadow: 0 0 0 1px #fff;
+ transition: all .2s ease-in-out;
+ }
+ 
+ .social-media-list li:hover {
+ background-color: #fff; 
+ }
+ 
+ .social-media-list li:hover:after {
+ opacity: 1;  
+ transform: scale(1.12);
+ transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+ }
+ 
+ .social-media-list li:hover a {
+ color: #000;
+ }
+ 
+ .copyright {
+ font: 200 14px 'Oswald', sans-serif;
+ color: #555;
+ letter-spacing: 1px;
+ text-align: center;
+ }
+ 
+ hr {
+ border-color: rgba(255,255,255,.6);
+ }
+ 
+ /* Begin Media Queries*/
+ @media screen and (max-width: 850px) {
+ .contact-wrapper {
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+   padding: 0 10%;
+ }
+ .direct-contact-container, .form-horizontal {
+   margin: 0 auto;
+ }  
+ 
+ .direct-contact-container {
+   margin-top: 60px;
+   max-width: 300px;
+ }    
+ .social-media-list li {
+   height: 60px;
+   width: 60px;
+   line-height: 60px;
+ }
+ .social-media-list li:after {
+   width: 60px;
+   height: 60px;
+   line-height: 60px;
+ }
+ }
+ 
+ @media screen and (max-width: 569px) {
+ 
+ .direct-contact-container, .form-wrapper {
+   float: none;
+   margin: 0 auto;
+ }  
+ .direct-contact-container {
+   margin-top: 60px;
+   max-width: 280px;
+ }  
+ .social-media-list {
+   left: 0;
+ }
+ .social-media-list li {
+   height: 55px;
+   width: 55px;
+   line-height: 55px;
+   font-size: 2rem;
+ }
+ .social-media-list li:after {
+   width: 55px;
+   height: 55px;
+   line-height: 55px;
+ }
+ 
+ }
+ 
+ @media screen and (max-width: 410px) {
+ .send-button {
+   width: 90%;
+ }
+ }
+ 
+ 
+ 
+ @media (max-width: 768px) {
+ .photoPort{
+   width: 60% !important;
+ }
+ #Gallary {
+   display: flex;
+   flex-direction: column;
+ }
+ #Gallary img {
+   border-radius: 0% !important;
+   aspect-ratio: 1;
+ }
+ #Gallary img:hover {
+   outline: 2px solid var(--Gcolor) !important;
+   outline-offset: 14px !important;
+ }
+ .ConLink{
+   display: none;
+ }
+ #Home{
+   flex-direction: column;
+ }
+ #skills{
+   grid-template-columns: auto !important;
+   height: max-content;
+ }
+ }
+ /* Medium */
+ @media (max-width: 992px) {
+ #skills{
+   grid-template-columns: auto ;
+   height: max-content;
+ }
+ .photoPort{
+   width: 60% !important;
+ }
+ #Gallary {
+   grid-template-columns: repeat(2, 30%) !important;
+   gap: 5rem;
+ }
+ #Gallary img {
+   width: 15rem !important;
+   border-radius: 50%;
+   aspect-ratio: 1;
+   outline: calc(15rem / 2) solid #0009 !important;
+   outline-offset: calc(15rem / -2) !important;
+ }
+ #Gallary img:hover {
+   outline: 2px solid var(--Gcolor) !important;
+   outline-offset: 14px !important;
+ }
+ }
+ /* Large */
+ @media (max-width: 1200px) {
+ #skills{
+   grid-template-columns: repeat(2,50%) ;
+   height: max-content;
+ }
+ .photoPort{
+   width: 40%;
+ }
+ #Gallary {
+   grid-template-columns: repeat(2, 30%);
+   gap: 5rem;
+ }
+ #Gallary img {
+   width: 15rem;
+   aspect-ratio: 1;
+   outline: calc(15rem / 2) solid #0009;
+   outline-offset: calc(15rem / -2);
+ }
+ #Gallary img:hover {
+   outline: 2px solid var(--Gcolor) !important;
+   outline-offset: 14px !important;
+ }
+ }
